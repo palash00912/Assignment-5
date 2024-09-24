@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float Donation</title>
+    <!-- Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              lexend: "Lexend",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lexend m-0">
+    <header class="sticky top-0 z-10">
+      <nav class="bg-[#F9F7F3]">
+        <div class="w-11/12 mx-auto">
+          <div class="flex justify-center py-4 md:hidden">
+            <div class="pr-3">
+              <img class="w-7 h-7" src="./assets/logo.png" alt="" />
+            </div>
+            <div class="font-semibold text-[#111111] text-xl">
+              Donate Bangladesh
+            </div>
+          </div>
+          <div class="navbar">
+            <div class="navbar-start" id="blogs">
+              <a class="px-8 py-2 rounded-lg bg-[#B4F461] text-xl">Blog</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <div class="pr-3">
+                <img class="w-7 h-7" src="./assets/logo.png" alt="" />
+              </div>
+              <div class="font-semibold text-[#0b0b0b] text-xl">
+                Donate Bangladesh
+              </div>
+            </div>
+            <div class="navbar-end">
+              <div class="p-3"><img src="./assets/coin.png" alt="" /></div>
+              <div class="text-[#0a0a0ab3] text-xl font-medium">
+                <span id="myBlance">5500</span> BDT
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="bg-[#FFFFFF] opacity-90">
+        <div class="flex justify-center space-x-8 py-6">
+          <button
+            id="title-donate"
+            class="rounded-xl px-8 py-2 font-semibold text-xl text-[#111111] bg-[#B4F461] border-none"
+          >
+            Donation
+          </button>
+          <button
+            id="title-history"
+            class="rounded-xl px-8 py-2 font-semibold text-[#111111]"
+          >
+            History
+          </button>
+        </div>
+      </div>
+    </header>
+
+
+  </body>
+</html>
