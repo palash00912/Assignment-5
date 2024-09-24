@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <!-- Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              lexend: "Lexend",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lexend">
+    <header class="sticky top-0 z-10">
+      <nav class="bg-[#F9F7F3]">
+        <div class="w-11/12 mx-auto">
+          <div class="flex justify-center py-4 md:hidden">
+            <div class="pr-3">
+              <img class="w-7 h-7" src="./assets/logo.png" alt="" />
+            </div>
+            <div class="font-semibold text-[#111111] text-xl">
+              Donate Bangladesh
+            </div>
+          </div>
+          <div class="navbar">
+            <div class="navbar-start" id="blogs">
+              <a
+                href="index.html"
+                class="px-8 py-2 rounded-lg bg-[#B4F461] text-xl font-semibold"
+                >Home</a
+              >
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <div class="pr-3">
+                <img class="w-7 h-7" src="./assets/logo.png" alt="" />
+              </div>
+              <div class="font-semibold text-[#0b0b0b] text-xl">
+                Donate Bangladesh
+              </div>
+            </div>
+            <div class="navbar-end">
+              <div class="p-3"><img src="./assets/coin.png" alt="" /></div>
+              <div class="text-[#0a0a0ab3] text-xl font-medium">
+                <span id="myBlance">5500</span> BDT
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- <div class="bg-[#FFFFFF] opacity-90">
+          <div class="flex justify-center space-x-8 py-6">
+            <button
+              
+              class="rounded-xl px-8 py-2 font-semibold text-xl text-[#111111] bg-[#B4F461] border-none"
+            >
+              Donation
+            </button>
+            <button
+              
+              class="border border-2 rounded-xl px-8 py-2 font-semibold text-[#111111]"
+            >
+              History
+            </button>
+          </div>
+        </div> -->
+    </header>
+
+    <main class="mx-auto w-11/12">
+      <div>
+        <h1 class="text-3xl font-bold p-2">Important FAQ</h1>
+        <img src="" alt="" />
+      </div>
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border-base-300 bg-base-200 border"
+      >
+        <div class="collapse-title text-xl font-medium">
+          What is the document object model?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The Document Object Model (DOM) is a programming interface for web
+            documents, representing the structure of a webpage as a tree of
+            objects. It allows scripts to dynamically access, modify, and
+            manipulate the content, structure, and style of a website.
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border-base-300 bg-base-200 border"
+      >
+        <div class="collapse-title text-xl font-medium">
+          How do you select an an element from the DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            You can select an element from the DOM using methods like
+            document.querySelector() (for the first matching element) or
+            document.getElementById() (for elements by ID). Both return a
+            reference to the selected element, allowing manipulation.
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border-base-300 bg-base-200 border"
+      >
+        <div class="collapse-title text-xl font-medium">
+          How do you manipulate an element attributes and style using the DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            You can manipulate an element's attributes using setAttribute() or
+            directly by modifying properties (e.g., element.id = "newId"). To
+            change styles, update the style property (e.g., element.style.color
+            = "red").
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
