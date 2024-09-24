@@ -1,9 +1,4 @@
-function styleChangeOfHistoryAndDonate(id){
-    document.getElementById('button-donate').classList.remove('bg-[#B4F461]','text-xl')
-    document.getElementById('button-history').classList.remove('bg-[#B4F461]','text-xl')
-    document.getElementById(id).classList.add('bg-[#B4F461]','text-xl')
-  
-  }
+
   function validityTest(id1,id2){
     const value1=backTodigint(id1);
    const value2=document.getElementById(id2)
@@ -16,7 +11,7 @@ function styleChangeOfHistoryAndDonate(id){
   }
   
   const mainBalance=document.getElementById('myBalanceAmount')
-  const historyDiv=document.getElementById('historyPage')
+  const historyDiv=document.getElementById('history-page')
   function backTodigint(id){
       const number1=document.getElementById(id).value;
    return parseFloat(number1);
@@ -34,7 +29,7 @@ function styleChangeOfHistoryAndDonate(id){
      }
     mainBalance.innerText=backTodigintFormString('myBalanceAmount')-backTodigint(id1);
   }
-  function addhistory(donate,place){
+  function addHistory(donate,place){
   
      const div=document.createElement('div');
      

@@ -77,7 +77,7 @@
           </button>
           <button
             id="button-history"
-            class="btn hover:bg-[#B4F461] rounded-xl px-8 py-2 font-semibold  text-xl text-[#111111]"
+            class="btn hover:bg-[#B4F461] rounded-xl px-8 py-2 font-semibold text-xl text-[#111111]"
           >
             History
           </button>
@@ -86,204 +86,214 @@
     </header>
 
     <main class="w-11/12 mx-auto">
-      <!-- first card -->
-      <div class="hero p-2 border-2 border-[#1111111A] rounded-3xl">
-        <div class="hero-content flex-col lg:flex-row">
-          <img src="./assets/noakhali.png" alt="" />
-          <div class="lg:ml-7">
-            <div
-              class="flex space-x-2 align-middle text-[#111111] opacity-70 p-3 rounded-xl bg-[#1111110D] w-40 mb-4"
-            >
-              <img src="./assets/coin.png" alt="" />
-              <div><span id="addMoney1">000</span> BDT</div>
-            </div>
-            <h1 id="noakhali" class="text-xl font-bold text-[#111111]">
-              Donate for Flood at Noakhali, Bangladesh
-            </h1>
-            <p class="py-6 text-[#111111] opacity-70 font-sm">
-              The recent floods in Noakhali have caused significant damage to
-              homes infrastructure. Your donation will help provide essential
-              supplies and to those affected by this disaster. Every
-              contribution, big or small, makes difference. Please join us in
-              supporting the relief efforts and making a positive impact on the
-              lives of those in need.
-            </p>
-            <input
-              id="donate-1"
-              class="border w-full rounded-xl p-3 pl-5 mb-6 font-sm text-sm"
-              type="text"
-              name=""
-              placeholder="Write Donation Amount"
-            />
-            <div
-              id="modal1"
-              class="absolute bg-white rounded-2xl left-96 top-24 hidden p-6 border"
-            >
-              <div class="flex justify-center flex-col items-center space-x-3">
-                <h2 class="font-bold text-[#1111111] text-2xl">Congrates!</h2>
-                <img
-                  class="w-12 h-12 mb-4 mt-2"
-                  src="./assets/coin.png"
-                  alt=""
-                />
-                <p class="text-[#111111] opacity-70 font-sm">
-                  you have donated for humankind
-                </p>
-                <h4 class="font-bold text-[#1111111] text-xl opacity-90 mb-4">
-                  Successfuly
-                </h4>
-
-                <button id="dmodal1" class="btn">close confirmation</button>
+      <div id="donation-page">
+        <!-- first card -->
+        <div class="hero p-2 border-2 border-[#1111111A] rounded-3xl">
+          <div class="hero-content flex-col lg:flex-row">
+            <img src="./assets/noakhali.png" alt="" />
+            <div class="lg:ml-7">
+              <div
+                class="flex space-x-2 align-middle text-[#111111] opacity-70 p-3 rounded-xl bg-[#1111110D] w-40 mb-4"
+              >
+                <img src="./assets/coin.png" alt="" />
+                <div><span id="addMoney1">000</span> BDT</div>
               </div>
-            </div>
+              <h1 id="noakhali" class="text-xl font-bold text-[#111111]">
+                Donate for Flood at Noakhali, Bangladesh
+              </h1>
+              <p class="py-6 text-[#111111] opacity-70 font-sm">
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
+              <input
+                id="donate-1"
+                class="border w-full rounded-xl p-3 pl-5 mb-6 font-sm text-sm"
+                type="text"
+                name=""
+                placeholder="Write Donation Amount"
+              />
+              <div
+                id="modal1"
+                class="absolute bg-white rounded-2xl left-96 top-24 hidden p-6 border"
+              >
+                <div
+                  class="flex justify-center flex-col items-center space-x-3"
+                >
+                  <h2 class="font-bold text-[#1111111] text-2xl">Congrates!</h2>
+                  <img
+                    class="w-12 h-12 mb-4 mt-2"
+                    src="./assets/coin.png"
+                    alt=""
+                  />
+                  <p class="text-[#111111] opacity-70 font-sm">
+                    you have donated for humankind
+                  </p>
+                  <h4 class="font-bold text-[#1111111] text-xl opacity-90 mb-4">
+                    Successfuly
+                  </h4>
 
-            <button
-              id="btn-1"
-              class="w-full rounded-xl opacity-90 py-2 text-[#111111] bg-[#B4F461] text-xl font-semibold"
-              onclick="my_modal_1.showModal()"
-            >
-              Donate Now
-            </button>
+                  <button id="dmodal1" class="btn">close confirmation</button>
+                </div>
+              </div>
+
+              <button
+                id="btn-1"
+                class="w-full rounded-xl opacity-90 py-2 text-[#111111] bg-[#B4F461] text-xl font-semibold"
+                onclick="my_modal_1.showModal()"
+              >
+                Donate Now
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <br />
-      <!-- first card end -->
+        <br />
+        <!-- first card end -->
 
-      <!-- second card start -->
-      <div class="hero p-2 border-2 border-[#1111111A] rounded-3xl">
-        <div class="hero-content flex-col lg:flex-row">
-          <img src="./assets/feni.png" alt="" />
-          <div class="lg:ml-7">
-            <div
-              class="flex space-x-2 align-middle text-[#111111] opacity-70 p-3 rounded-xl bg-[#1111110D] w-40 mb-4"
-            >
-              <img src="./assets/coin.png" alt="" />
-              <div><span id="addMoney2">000</span> <span>BDT</span></div>
-            </div>
-            <h1 id="feni" class="text-xl font-bold text-[#111111]">
-              Donate for Flood Relief in Feni,Bangladesh
-            </h1>
-            <p class="py-6 text-[#111111] opacity-70 font-sm">
-              The recent floods in Feni have devastated local communities,
-              leading to severe disruption and loss. Your generous donation will
-              help provide immediate aid, including food, clean water, and
-              medical supplies, to those affected by this calamity. Together, we
-              can offer crucial support and help rebuild lives in the aftermath
-              of this disaster. Every contribution counts towards making a real
-              difference. Please consider donating today to assist those in
-              urgent need.
-            </p>
-            <input
-              id="donate-2"
-              class="border w-full rounded-xl p-3 pl-5 mb-6 font-sm text-sm"
-              type="text"
-              name=""
-              placeholder="Write Donation Amount"
-            />
-            <div
-              id="modal2"
-              class="absolute bg-white rounded-2xl left-96 top-24 hidden p-6 border"
-            >
-              <div class="flex justify-center flex-col items-center space-x-3">
-                <h2 class="font-bold text-[#1111111] text-2xl">Congrates!</h2>
-                <img
-                  class="w-12 h-12 mb-4 mt-2"
-                  src="./assets/coin.png"
-                  alt=""
-                />
-                <p class="text-[#111111] opacity-70 font-sm">
-                  you have donated for humankind
-                </p>
-                <h4 class="font-bold text-[#1111111] text-xl opacity-90 mb-4">
-                  Successfuly
-                </h4>
-
-                <button id="dmodal2" class="btn">close confirmation</button>
+        <!-- second card start -->
+        <div class="hero p-2 border-2 border-[#1111111A] rounded-3xl">
+          <div class="hero-content flex-col lg:flex-row">
+            <img src="./assets/feni.png" alt="" />
+            <div class="lg:ml-7">
+              <div
+                class="flex space-x-2 align-middle text-[#111111] opacity-70 p-3 rounded-xl bg-[#1111110D] w-40 mb-4"
+              >
+                <img src="./assets/coin.png" alt="" />
+                <div><span id="addMoney2">000</span> <span>BDT</span></div>
               </div>
+              <h1 id="feni" class="text-xl font-bold text-[#111111]">
+                Donate for Flood Relief in Feni,Bangladesh
+              </h1>
+              <p class="py-6 text-[#111111] opacity-70 font-sm">
+                The recent floods in Feni have devastated local communities,
+                leading to severe disruption and loss. Your generous donation
+                will help provide immediate aid, including food, clean water,
+                and medical supplies, to those affected by this calamity.
+                Together, we can offer crucial support and help rebuild lives in
+                the aftermath of this disaster. Every contribution counts
+                towards making a real difference. Please consider donating today
+                to assist those in urgent need.
+              </p>
+              <input
+                id="donate-2"
+                class="border w-full rounded-xl p-3 pl-5 mb-6 font-sm text-sm"
+                type="text"
+                name=""
+                placeholder="Write Donation Amount"
+              />
+              <div
+                id="modal2"
+                class="absolute bg-white rounded-2xl left-96 top-24 hidden p-6 border"
+              >
+                <div
+                  class="flex justify-center flex-col items-center space-x-3"
+                >
+                  <h2 class="font-bold text-[#1111111] text-2xl">Congrates!</h2>
+                  <img
+                    class="w-12 h-12 mb-4 mt-2"
+                    src="./assets/coin.png"
+                    alt=""
+                  />
+                  <p class="text-[#111111] opacity-70 font-sm">
+                    you have donated for humankind
+                  </p>
+                  <h4 class="font-bold text-[#1111111] text-xl opacity-90 mb-4">
+                    Successfuly
+                  </h4>
+
+                  <button id="dmodal2" class="btn">close confirmation</button>
+                </div>
+              </div>
+              <button
+                id="btn-2"
+                class="w-full rounded-xl opacity-90 py-2 text-[#111111] bg-[#B4F461] text-xl font-semibold"
+                onclick="my_modal_1.showModal()"
+              >
+                Donate Now
+              </button>
             </div>
-            <button
-              id="btn-2"
-              class="w-full rounded-xl opacity-90 py-2 text-[#111111] bg-[#B4F461] text-xl font-semibold"
-              onclick="my_modal_1.showModal()"
-            >
-              Donate Now
-            </button>
           </div>
         </div>
-      </div>
-      <br />
-      <!-- second card end -->
+        <br />
+        <!-- second card end -->
 
-      <!-- 3rd card start -->
-      <div class="hero p-2 border-2 border-[#1111111A] rounded-3xl">
-        <div class="hero-content flex-col lg:flex-row">
-          <img src="./assets/quota-protest.png" alt="" />
-          <div class="lg:ml-7">
-            <div
-              class="flex space-x-2 align-middle text-[#111111] opacity-70 p-3 rounded-xl bg-[#1111110D] w-40 mb-4"
-            >
-              <img src="./assets/coin.png" alt="" />
-              <div><span id="addMoney3">000</span><span>BDT</span></div>
-            </div>
-            <h1 id="movment" class="text-xl font-bold text-[#111111]">
-              Aid for Injured in the Quota Movement
-            </h1>
-            <p class="py-6 text-[#111111] opacity-70 font-sm">
-              The recent Quota movement has resulted in numerous injuries and
-              significant hardship for many individuals. Your support is crucial
-              in providing medical assistance, rehabilitation, and necessary
-              supplies to those affected. By contributing, you help ensure that
-              injured individuals receive the care and support they need during
-              this challenging time. Every donation plays a vital role in
-              alleviating their suffering and aiding in their recovery. Please
-              consider making a donation to support these brave individuals in
-              their time of need.
-            </p>
-            <input
-              id="donate-3"
-              class="border w-full rounded-xl p-3 pl-5 mb-6 font-sm text-sm"
-              type="text"
-              name=""
-              placeholder="Write Donation Amount"
-            />
-            <div
-              id="modal3"
-              class="absolute bg-white rounded-2xl left-96 top-24 hidden p-6 border"
-            >
-              <div class="flex justify-center flex-col items-center space-x-3">
-                <h2 class="font-bold text-[#1111111] text-2xl">Congrates!</h2>
-                <img
-                  class="w-12 h-12 mb-4 mt-2"
-                  src="./assets/coin.png"
-                  alt=""
-                />
-                <p class="text-[#111111] opacity-70 font-sm">
-                  you have donated for humankind
-                </p>
-                <h4 class="font-bold text-xl opacity-90 mb-4 text-[#1111111]">
-                  Successfuly
-                </h4>
-
-                <button id="dmodal3" class="btn">close confirmation</button>
+        <!-- 3rd card start -->
+        <div class="hero p-2 border-2 border-[#1111111A] rounded-3xl">
+          <div class="hero-content flex-col lg:flex-row">
+            <img src="./assets/quota-protest.png" alt="" />
+            <div class="lg:ml-7">
+              <div
+                class="flex space-x-2 align-middle text-[#111111] opacity-70 p-3 rounded-xl bg-[#1111110D] w-40 mb-4"
+              >
+                <img src="./assets/coin.png" alt="" />
+                <div><span id="addMoney3">000</span><span>BDT</span></div>
               </div>
+              <h1 id="movment" class="text-xl font-bold text-[#111111]">
+                Aid for Injured in the Quota Movement
+              </h1>
+              <p class="py-6 text-[#111111] opacity-70 font-sm">
+                The recent Quota movement has resulted in numerous injuries and
+                significant hardship for many individuals. Your support is
+                crucial in providing medical assistance, rehabilitation, and
+                necessary supplies to those affected. By contributing, you help
+                ensure that injured individuals receive the care and support
+                they need during this challenging time. Every donation plays a
+                vital role in alleviating their suffering and aiding in their
+                recovery. Please consider making a donation to support these
+                brave individuals in their time of need.
+              </p>
+              <input
+                id="donate-3"
+                class="border w-full rounded-xl p-3 pl-5 mb-6 font-sm text-sm"
+                type="text"
+                name=""
+                placeholder="Write Donation Amount"
+              />
+              <div
+                id="modal3"
+                class="absolute bg-white rounded-2xl left-96 top-24 hidden p-6 border"
+              >
+                <div
+                  class="flex justify-center flex-col items-center space-x-3"
+                >
+                  <h2 class="font-bold text-[#1111111] text-2xl">Congrates!</h2>
+                  <img
+                    class="w-12 h-12 mb-4 mt-2"
+                    src="./assets/coin.png"
+                    alt=""
+                  />
+                  <p class="text-[#111111] opacity-70 font-sm">
+                    you have donated for humankind
+                  </p>
+                  <h4 class="font-bold text-xl opacity-90 mb-4 text-[#1111111]">
+                    Successfuly
+                  </h4>
+
+                  <button id="dmodal3" class="btn">close confirmation</button>
+                </div>
+              </div>
+              <button
+                id="btn-3"
+                class="w-full rounded-xl opacity-90 py-2 text-[#111111] bg-[#B4F461] text-xl font-semibold"
+                onclick="my_modal_1.showModal()"
+              >
+                Donate Now
+              </button>
             </div>
-            <button
-              id="btn-3"
-              class="w-full rounded-xl opacity-90 py-2 text-[#111111] bg-[#B4F461] text-xl font-semibold"
-              onclick="my_modal_1.showModal()"
-            >
-              Donate Now
-            </button>
           </div>
         </div>
+        <!-- 3rd card end -->
       </div>
-      <!-- 3rd card end -->
-      
+      <div id="history-page" class="mx-auto hidden space-y-4">
+        <h1>Your Donation List and Time !!!!!</h1>
+      </div>
     </main>
     <!-- History button -->
-    <div id="historyPage" class="mx-auto hidden space-y-5"></div>
     <script src="js/utilities.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/history.js"></script>
   </body>
 </html>
