@@ -6,6 +6,10 @@
       alert('INVALID NUMBER')
       return 0;
     }
+    else if(value1>0){
+      document.getElementById('my_modal_5').showModal();
+    }
+      
    
   
   }
